@@ -7,12 +7,10 @@ class fun:
     def __init__(self, bot):
         self.bot = bot
 
-    @commands.command()
-    async def mycom(self):
-        """This does stuff!"""
-
-        #Your code will go here
-        await self.bot.say("I can do stuff!")
+   @commands.command(no_pm=True)
+    async def repeat(self, *, text):
+        """Copies your words"""
+        await self.bot.say(text)
 
 def setup(bot):
     bot.add_cog(Mycog(bot))
