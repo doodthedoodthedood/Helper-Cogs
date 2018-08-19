@@ -13,4 +13,4 @@ class fun:
         await self.bot.say(text)
 
 def setup(bot):
-    bot.add_cog(Mycog(bot))
+    bot.add_cog(fun(bot))
