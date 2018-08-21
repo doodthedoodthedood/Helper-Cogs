@@ -14,6 +14,6 @@ class Repeat:
         
         
         def setup(bot):
-        n = Repeat(bot)
-        bot.add_cog(n)
+            n = Repeat(bot)
+            bot.add_cog(n)
         
