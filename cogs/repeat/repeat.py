@@ -8,7 +8,7 @@ class Repeat:
                 self.bot = bot
         
         @commands.command(no_pm=True)
-        async def repeat(self, *, text):
+        async def sayagain(self, *, text):
             """Copies You"""
             await self.bot.say(text)
         
