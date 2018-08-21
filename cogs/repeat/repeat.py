@@ -1,4 +1,4 @@
-from discort.ext import commands
+from discord.ext import commands
 
 
 class Repeat:
