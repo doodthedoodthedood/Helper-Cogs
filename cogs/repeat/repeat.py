@@ -13,7 +13,7 @@ class Repeat:
             await self.bot.say(text)
         
         
-        def setup(bot):
-            n = Repeat(bot)
-            bot.add_cog(n)
+def setup(bot):
+    n = Repeat(bot)
+    bot.add_cog(n)
         
