@@ -1,8 +1,8 @@
 {
     "AUTHOR" : "doodthedoodthedood",
-    "SHORT" : "Fun commands",
-    "DESCRIPTION" : "Fun commands to do",
+    "SHORT" : "Repeater",
+    "DESCRIPTION" : "Repeats your words",
     "DISABLED" : false,
-    "NAME" : "fun",
-    "INSTALL_MSG" : "Thank you for installing Fun from D Cogs.\nIf you fin any issues, post them here: https://github.com/doodthedoodthedood/d-Cogs"
+    "NAME" : "repeat",
+    "INSTALL_MSG" : "Thank you for installing Fun from D Cogs.\nIf you find any issues, post them here: https://github.com/doodthedoodthedood/d-Cogs"
 }
