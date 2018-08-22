@@ -40,5 +40,5 @@ class Calculator:
             
                 
 def setup(bot):
-        n = Repeat(bot)
+        n = Calculator(bot)
         bot.add_cog(n)
