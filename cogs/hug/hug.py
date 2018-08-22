@@ -13,5 +13,5 @@ class Hug:
             
             
 def setup(bot):
-    n = Repeat(bot)
+    n = Hug(bot)
     bot.add_cog(n)
