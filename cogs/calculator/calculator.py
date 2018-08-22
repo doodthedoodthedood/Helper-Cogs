@@ -29,7 +29,7 @@ class Calculator:
         @calculator.command(no_pm=True)
         async def multiply(self, num1, num2):
             self.bot.say('Multipliying Numbers...')
-            final = num1 x num2
+            final = num1 * num2
             self.bot.say(final + ' is the answer you are looking for.')
             
         @calculator.command(no_pm=True)
