@@ -39,6 +39,6 @@ class Calculator:
             self.bot.say(final + ' is the answer you are looking for.')
             
             
-        def setup(bot):
-                n = Repeat(bot)
-                bot.add_cog(n)
+     def setup(bot):
+           n = Repeat(bot)
+           bot.add_cog(n)
