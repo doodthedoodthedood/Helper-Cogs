@@ -2,7 +2,7 @@ from discord.ext import commands
 
 class Calculator:
         """Adds, subtracts, multiplies, and divides your numbers"""
-        async def __init__(self, bot):
+         def __init__(self, bot):
             self.bot = bot
         
         
