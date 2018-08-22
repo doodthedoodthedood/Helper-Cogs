@@ -8,7 +8,7 @@ class Hug:
             
             
         @commands.command()
-        async def _hug(self, *, random = False):
+        async def famhug(self, *, random = False):
             self.bot.say('***FAMLIYA HUG INCOMING!!***:hugging: :heart:')
             
             
