@@ -11,8 +11,7 @@ class Hug:
         async def _hug(self, *, random = False):
             if random:
                 self.bot.say('***FAMLIYA HUG INCOMING!!***:hugging: :heart:')
-            else:
-                self.bot.say('***FAMLIYA HUG INCOMING!!***:hugging: :heart:')
+            self.bot.say('***FAMLIYA HUG INCOMING!!***:hugging: :heart:')
             
             
 def setup(bot):
