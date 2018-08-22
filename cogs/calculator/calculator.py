@@ -7,7 +7,7 @@ class Calculator:
         
         
         
-        @commands.group(pass_context: True, no_pm=True)
+        @commands.group(pass_context=True, no_pm=True)
         async def calculator(self, cxt)
          if ctx.invoked_subcommand is None:
             await send_cmd_help(ctx)
