@@ -5,39 +5,57 @@ class Calculator:
         def __init__(self, bot):
             self.bot = bot
         
-        
+        version = '1.0.0'
         
         @commands.group(pass_context=True, no_pm=True)
         async def calculator(self, ctx):
          if ctx.invoked_subcommand is None:
-            await send_cmd_help(ctx)
+            await self.bot.send_cmd_help(ctx)
             
         @calculator.command(no_pm=True)
         async def add(self, num1, num2):
-            self.bot.say('Adding Numbers...')
-            final = num1 + num2
-            self.bot.say(final + ' is the answer you are looking for.')
+            """Adds 2 Numbers"""
+            int(num1)
+            int(num2)
+            await self.bot.say('Adding Numbers...')
+            final = int(num1) + int(num2)
+            await self.bot.say(str(final) + ' is the answer you are looking for.')
             
             
         @calculator.command(no_pm=True)
         async def subtract(self, num1, num2):
-            self.bot.say('Subtracting Numbers...')
-            final = num1 - num2
-            self.bot.say(final + ' is the answer you are looking for.')
+            """Subtracts 2 Numbers"""
+            int(num1)
+            int(num2)
+            await self.bot.say('Subtracting Numbers...')
+            final = int(num1) - int(num2)
+            await self.bot.say(str(final) + ' is the answer you are looking for.')
             
             
         @calculator.command(no_pm=True)
         async def multiply(self, num1, num2):
-            self.bot.say('Multipliying Numbers...')
-            final = num1 * num2
-            self.bot.say(final + ' is the answer you are looking for.')
+            """Multiplies 2 Numbers"""
+            int(num1)
+            int(num2)
+            await self.bot.say('Multipliying Numbers...')
+            final = int(num1) * int(num2)
+            await self.bot.say(str(final) + ' is the answer you are looking for.')
             
         @calculator.command(no_pm=True)
         async def divide(self, num1, num2):
-            self.bot.say('Dividing Numbers...')
-            final = num1 / num2
-            self.bot.say(final + ' is the answer you are looking for.')
-            
+            """Divides 2 Numbers"""
+            int(num1)
+            int(num2)
+            await self.bot.say('Dividing Numbers...')
+            final = int(num1) / int(num2)
+            await self.bot.say(str(final) + ' is the answer you are looking for.')
+        
+        
+        @calculator.command(no_pm=True)
+        async def version(self):
+            """Shows the version"""
+            await self.bot.say('The version is ' + version)
+        
                 
 def setup(bot):
         n = Calculator(bot)
