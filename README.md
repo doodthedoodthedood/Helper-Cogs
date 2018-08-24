@@ -1,4 +1,4 @@
-# d-Cogs
+# Helper-Cogs
 Useable for Red-Discord Bot by twentysix26
 
 The cogs in this repository are:
