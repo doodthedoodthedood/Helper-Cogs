@@ -1,0 +1,8 @@
+{
+    "AUTHOR" : "doodthedoodthedood",
+    "SHORT" : "Commands made for Kolya on discord",
+    "DESCRIPTION" : "Made for Kolya on discord",
+    "DISABLED" : false,
+    "NAME" : "kolya-commands",
+    "INSTALL_MSG" : "Thank you for installing kolya-commands from D Cogs.\nIf you find any issues, post them here: https://github.com/doodthedoodthedood/d-Cogs. \nIf you would like your own cog, post an issue on the same page, or join this server: https://discord.gg/9TbpZwc"
+}
