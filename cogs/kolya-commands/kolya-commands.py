@@ -10,6 +10,10 @@ class Hug:
         @commands.command()
         async def famhug(self):
          await self.bot.say('***FAMLIYA HUG INCOMING!!***:hugging: :heart:')
+        
+        @commands.command()
+        async def member(self):
+         await self.bot.say("Alright kid, you're a Familya member now. https://gph.is/2w6UiTV")
             
             
 def setup(bot):
