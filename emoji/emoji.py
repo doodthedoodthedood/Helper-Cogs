@@ -1,5 +1,6 @@
 from discord.ext import commands
 from redbot.core import commands
+from discord.ext import emoji
 
 class Emoji:
         
@@ -15,7 +16,7 @@ class Emoji:
             
         @emoji.command(no_pm=True)
         async def list(self, ctx):
-           await ctx.send(get_all_emojis())
+           await ctx.send(Emoji.emojis)
             
             
 
