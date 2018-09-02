@@ -15,7 +15,7 @@ class Emoji:
             
         @emoji.command(no_pm=True)
         async def list(self, ctx):
-           await ctx.send(emojis)
+           await ctx.send(get_all_emojis())
             
             
 
