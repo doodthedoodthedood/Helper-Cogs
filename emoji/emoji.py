@@ -11,7 +11,7 @@ class Emoji:
         @emoji.command(no_pm=True)
         async def convert(self, ctx, emoji):
             """Converts text into an emoji"""
-            await ctx.send(":{emoji}:")
+            await ctx.send(":" + emoji + ":")
             
         @emoji.command(no_pm=True)
         async def list(self, ctx):
