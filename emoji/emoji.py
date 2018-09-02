@@ -10,7 +10,7 @@ class Emoji:
             await ctx.send_cmd_help(ctx)
             
         @emoji.command(no_pm=True)
-        async def convert(self, emoji):
+        async def convert(self, ctx, emoji):
             """Converts text into an emoji"""
             await ctx.send(":{}:").format(emoji)
             
