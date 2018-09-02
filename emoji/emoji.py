@@ -1,10 +1,6 @@
 from discord.ext import commands
 
 class Emoji:
-        """States any emoji"""
-        def __init__(self, bot):
-            self.bot = bot
-        
         
         
         @commands.group(pass_context=True, no_pm=True)
@@ -22,6 +18,4 @@ class Emoji:
             self.bot.say(emojis)
             
             
-def setup(bot):
-        n = emoji(bot)
-        bot.add_cog(n)
+
