@@ -7,16 +7,16 @@ class Emoji:
         @commands.group(pass_context=True, no_pm=True)
         async def emoji(self, ctx):
          if ctx.invoked_subcommand is None:
-            await self.bot.send_cmd_help(ctx)
+            await ctx.send_cmd_help(ctx)
             
         @emoji.command(no_pm=True)
         async def convert(self, emoji):
             """Converts text into an emoji"""
-            await self.bot.say(":{}:").format(emoji)
+            await ctx.send(":{}:").format(emoji)
             
         @emoji.command(no_pm=True)
         async def list(self, ctx):
-            self.bot.say(emojis)
+           await ctx.send(emojis)
             
             
 
