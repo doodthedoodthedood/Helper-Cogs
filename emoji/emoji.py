@@ -6,6 +6,7 @@ class Emoji:
         
         @commands.group(pass_context=True, no_pm=True)
         async def emoji(self, ctx):
+                """emoji stuff"""
             
         @emoji.command(no_pm=True)
         async def convert(self, ctx, emoji):
