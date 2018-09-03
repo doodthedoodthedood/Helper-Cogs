@@ -1,6 +1,5 @@
 from discord.ext import commands
 from redbot.core import commands
-from discord.ext import emoji
 import json
 class Emoji:
         
