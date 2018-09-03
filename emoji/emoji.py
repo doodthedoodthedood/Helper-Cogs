@@ -1,7 +1,7 @@
 from discord.ext import commands
 from redbot.core import commands
 from discord.ext import emoji
-
+import json
 class Emoji:
         
         
@@ -12,7 +12,11 @@ class Emoji:
         @emoji.command(no_pm=True)
         async def convert(self, ctx, emoji):
             """Converts text into an emoji"""
-            await ctx.send(":" + emoji + ":")
+            with open('emojis.json') as emojis:
+                if emoji in emojis:
+                    await ctx.send(":" + emoji + ":")
+                else:
+                    await ctx.send('That is not a valid emoji')
             
         @emoji.command(no_pm=True)
         async def list(self, ctx):
